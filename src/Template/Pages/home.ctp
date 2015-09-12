@@ -47,6 +47,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </header>
     <div id="content">
         <div class="row">
+        <?= $this->Flash->render('auth') ?>
             <?php Debugger::checkSecurityKeys(); ?>
             <div id="url-rewriting-warning" class="columns large-12 url-rewriting checks">
                 <p class="problem">URL rewriting is not properly configured on your server.</p>
